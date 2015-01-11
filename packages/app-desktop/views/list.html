@@ -1,0 +1,14 @@
+<template name="list">
+  <ul>
+    {{#each programmingLanguages}}
+      <li>
+        {{name}}
+        <a href="#" class="remove-lang">[X]</a>
+      </li>
+    {{/each}}
+  </ul>
+  <form id="addLanguageForm">
+    <input type="text" id="languageName" placeholder="Language name">
+    <button type="submit" name="Add">Add</button>
+  </form>
+</template>
